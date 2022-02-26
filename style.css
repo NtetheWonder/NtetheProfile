@@ -14,12 +14,12 @@
     --toggle-color: #d00;
     --text-color: #707070;
     --span-color: yellowgreen;
-
     --trans-03: all 0.2s ease;
   }
  
 
   /*=================sidebar(Header)======================*/
+  
   header .text{
       font-size: 16px;
       font-weight: 500;
@@ -35,11 +35,11 @@
  
   body{
      
-      background: var(--body-color);
-     
+      background: var(--body-color); 
       padding-left: 250px;
+      align-items: center;
+      justify-content: center;
 
-     
   }
   header{
       padding-top: 1rem;
@@ -55,6 +55,8 @@
       align-content: center;
       flex-flow: column;
       text-align: center;
+      justify-content: center;
+      transition: 00.5s ease-in-out;
      
   }
   header .image-text img{
@@ -94,6 +96,14 @@
      
 
   }
+  header .social-media a{
+      color: blue;
+      font-size: 1.2rem;
+      margin: 0.2rem;
+  }
+  header .social-media a:hover{
+      color: var(--primary-color);
+  }
 
   /*=================End of sidebar(Header)======================*/
 
@@ -105,20 +115,26 @@
     color: black;
     border-radius: .5rem;
     cursor: pointer;
-    padding: 1rem 1.5rem;
-    font-size: 3rem;
+    font-size: 2rem;
     display: none;
-    
+    padding: 1rem 1rem;
+      
 }
 
 
 section{
+    background:#e4e9f7;
     min-height: 100vh; 
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: 2rem;
 }
 .heading {
     text-align: center;
     margin-bottom: 1.5rem;
-    font-size: 2rem;
+    font-size: 3rem;
 
   }
   .heading span{
@@ -133,18 +149,38 @@ section{
     font-size: 1.05rem;
     text-transform: uppercase;
     font-weight: 400;
-    transition: 0.3s;
+    
     cursor: pointer;
+  }
+  .btn:hover{
+    background-color: yellowgreen;
+    color: black;
+    transition: 0.5s ease-in-out;
   }
 /*=================end of menu======================*/
 
+.hobbies .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+
+.hobbies .box-container .box{
+    flex: 1 1 20rem;
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0.2rem .2rem .1rem var(--text-color);
+}
 /*=================Home page======================*/
 .home{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
-    padding: 0 15 rem;
+    padding: 0 15 rem; 
 }
 .home h3{
     font-size: 2rem;
@@ -161,13 +197,13 @@ section{
 
 .about .container{
     display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
     
 }
 .about .info{
-    color: var(--text-color);
-    font-size: 1.2rem;
-    padding:1rem 7rem;
-    
+    flex: 1 1 20rem;
+    color: var(--text-color);    
 }
 .about .info span{
     color: var(--span-color);
@@ -182,47 +218,89 @@ section{
 }
 /*=================End of about page======================*/
 /*=================Contact page======================*/
-.contact-details{
+.contacts .contact-details{
     display: flex;
-    padding:1rem 7rem;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+.contacts .contact-details .information{
+    flex: 1 1 20rem;
+    background: #fff;
+    text-align: center;
+    padding: .5rem;
+    box-shadow: 0.2rem .2rem .1rem var(--text-color);
+    
+}
+.contacts .contact-form{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+   
+    
+}
+.contacts .contact-form form{
+    flex: 1 1 40rem;
+    background: #fff;
+    box-shadow: 0.rem .1rem .1rem var(--text-color);
+    border-radius: .5rem;
+    padding: 2rem;
+}
+.contacts .contact-form .map{
+    flex: 1 1 20rem;
+    border: 1rem solid #fff;
+    width: 100%;
+}
+.contacts .contact-form form .items,
+.contacts .contact-form form textarea
+{
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: .1rem solid #333;
+    color: #333;
+    text-transform: none;
+    padding: .5rem 0;
+    
+}
+.contacts .contact-form form textarea{
+    height: 10rem;
+    resize: none;
+}
+.contacts .contact-form form .items:focus,
+.contacts .contact-form form textarea:focus{
+
+    outline: none;
+    
 }
 
-.contact-details .contact-form{
-    padding:0 2rem;
-}
-.contact-details .contact-form .items{
-    margin-top: 1rem;
-}
 /*=================End of contact page======================*/
 /*=================Projects page======================*/
 
+
+
 .projects .project-group{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-content: center;
-    padding:1rem 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     
-    
-  
+     
 }
 .projects .project-group .portfolio{
     
-    background: var(--primary-color);
-    margin-top: 1rem;
-    margin-right: 1rem;
+    flex: 1 1 20rem;
     text-align: center;
-    border-radius: 1rem;
-  
-    
+    padding: .5rem;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0.2rem .2rem .1rem var(--text-color);
 }
 
 .project-group img{
     width: 100%;
-    height: 15rem;
-    padding: .5rem .5rem;
+    height: 14rem;
+    
     border-radius: 1rem;
 }
 .button {
@@ -232,6 +310,7 @@ section{
     color: var(--toggle-color);
     border-radius: .5rem;
     font-size: 1rem;
+    cursor: pointer;
     text-transform: uppercase;
     font-weight: 500;
     transition: 0.3s;
@@ -239,6 +318,8 @@ section{
   
   .button:hover {
     background-color: #6b44e0;
+    color: white;
+    transition: 0.5s ease-in-out;
   }
   
   .button.small {
@@ -250,9 +331,19 @@ section{
 /*=================Education ======================*/
 .education .schools{
     display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
     align-items: center;
     align-content: center;
-    padding:1rem 7rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.education .schools .high{
+    flex: 1 1 20rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 0.1rem 0.2rem rgb(8, 5, 168);
 }
 .education .schools span{
     color: var(--span-color);
@@ -267,8 +358,10 @@ section{
 
 /*=================End education======================*/
 /*=================Certificates======================*/
+
 .certificates{
     padding:1rem 7rem;
+    align-items: center;
 }
 .section-header{
     align-items: center;
@@ -323,7 +416,7 @@ section{
   }
   
   .card:after {
-    content: "";
+
     position: absolute;
     width: 100%;
     height: 0px;
@@ -355,9 +448,14 @@ section{
     margin: 1.8rem 0;
   }
 /*=================End Certificates======================*/
+/*=================Hobbies======================*/
+
+/*=================End Hobbies======================*/
 
 @media(max-width:991px){
-    
+    html{
+        font-size: 80%;
+    }
     header{
         left: -120%;
     }
@@ -373,12 +471,9 @@ section{
 
     .about .info{
         color: var(--text-color);
-        font-size: 1rem;
-        padding:.5rem 3.5rem;
+        font-size: 1rem; 
         
     }
-
-  
 }
 
 @media (max-width:650px){
@@ -391,99 +486,35 @@ section{
         padding: .65rem 1.5rem;
     }
     .home{
-        margin-top: 6rem;
-        display: block;
         align-items: center;
+        justify-content: center;
         text-align: center;
-        padding:.2rem 2rem;
     }
-    .home h3{
-        font-size: 1rem;
-        
-    }
-    .home h1{
-        font-size: 1.5rem;
-        
-    }
-    .about .container, .education .schools,.projects .project-group{
-        display: block;
-        
-    }
-    .about .info,.education .schools{
-        
-        font-size: .85rem;
-        padding:.2rem 2rem;
-        
-    }
-    .projects .project-group{
-
-        font-size: .85rem;
-        padding:.2rem 2rem;
-    }
+    
     .certificates{
         font-size: .85rem;
         padding:.2rem 2rem;
     
     }
-    .certificates .cards{
-        display: block;
-    }
-   
     .about .bio img{
         width: 100%;
         height: 100%;
-        border-radius: 1.25rem;
-        padding:.2rem 2rem;
-    }
-    .contact-details{
-        display: block;
-        font-size: .85rem;
-        padding:.2rem 2rem;
-        align-items: center;
-        justify-content: center;
-        justify-items: center;
-        text-align: center;
-    }
-    .contact-details .contact-form{
-        padding:0;
+        border-radius: .5rem;
     }
     
 }
-@media (max-width:400px){
+@media (max-width:450px){
+    html{
+        font-size: 75%;
+    }
     header{
-        width: 80%;
-        font-size: 1rem;
+        width: 100%;
+        height: 100%;
     }
     
     header .image-text img{
         width: 70px;
         border-radius: 50%;
-    }
-   
-    .home{
-        margin-top: 6rem;
-        display: block;
-        align-items: center;
-        text-align: center;
-        padding:.2rem 1rem;
-    }
-    .home h3{
-        font-size: 1rem;
-        
-    }
-    .home h1{
-        font-size: 1.5rem;
-        
-    }
-    .about .container, .education .schools, .contact-details,.projects .project-group{
-        display: block;
-        
-    }
-    .about .info,.education .schools{
-        
-        font-size: .82rem;
-        padding:.2rem 1rem;
-        
     }
    
     .about .bio img{

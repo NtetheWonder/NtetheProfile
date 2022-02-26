@@ -270,7 +270,6 @@ section{
 }
 .contacts .contact-form form .items:focus,
 .contacts .contact-form form textarea:focus{
-
     outline: none;
     
 }
@@ -453,9 +452,7 @@ section{
 /*=================End Hobbies======================*/
 
 @media(max-width:991px){
-    html{
-        font-size: 80%;
-    }
+    
     header{
         left: -120%;
     }
@@ -504,9 +501,7 @@ section{
     
 }
 @media (max-width:450px){
-    html{
-        font-size: 75%;
-    }
+    
     header{
         width: 100%;
         height: 100%;

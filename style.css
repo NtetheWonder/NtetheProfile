@@ -102,7 +102,9 @@
       margin: 0.2rem;
   }
   header .social-media a:hover{
-      color: var(--primary-color);
+      background: var(--primary-color);
+      color: var(--primary-color-light);
+      transition: .5s ease-in-out;
   }
 
   /*=================End of sidebar(Header)======================*/
@@ -268,7 +270,7 @@ section{
     
 }
 .contacts .contact-form form textarea{
-    height: 10rem;
+    height: 12rem;
     resize: none;
 }
 .contacts .contact-form form .items:focus,
@@ -278,6 +280,23 @@ section{
 }
 
 /*=================End of contact page======================*/
+footer {
+    text-align: center;
+    padding: 3px;
+    background: var(--text-color);
+    color: white;
+    padding: 2rem;
+  }
+  footer .social-media a{
+     color: #fff;
+     font-size: larger;
+     padding: .3rem;
+     
+  }
+  footer .social-media a:hover{
+      color: black;
+      transition: .2s ease-in-out;
+  }
 /*=================Projects page======================*/
 
 
@@ -340,7 +359,6 @@ section{
 }
 .education .schools .high{
     flex: 1 1 20rem;
-    
     margin-bottom: 1.5rem;
     border-radius: .5rem;
     box-shadow: 0.1rem 0.2rem rgb(8, 5, 168);

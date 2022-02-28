@@ -219,6 +219,7 @@ section{
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    box-shadow: .5rem .2rem  .1rem yellowgreen;
 }
 /*=================End of about page======================*/
 /*=================Contact page======================*/
@@ -305,8 +306,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    
-    
      
 }
 .projects .project-group .portfolio{
@@ -358,7 +357,7 @@ footer {
     
 }
 .education .schools .high{
-    flex: 1 1 20rem;
+    flex: 1 1 25rem;
     margin-bottom: 1.5rem;
     border-radius: .5rem;
     box-shadow: 0.1rem 0.2rem rgb(8, 5, 168);
@@ -495,7 +494,7 @@ footer {
 @media (max-width:650px){
     
     .heading{
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
     .btn,.button{
         font-size: .85rem;
@@ -505,6 +504,11 @@ footer {
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+    header .image-text img{
+        width: 100;
+        border-radius: 20%;
+        
     }
     
     .certificates{
@@ -526,10 +530,7 @@ footer {
         height: 100%;
     }
     
-    header .image-text img{
-        width: 70px;
-        border-radius: 50%;
-    }
+   
    
     .about .bio img{
         width: 100%;

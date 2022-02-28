@@ -71,8 +71,9 @@
     <section class="home" id="home">
       <h3>Hi there!</h3>
       <h1>I'm <span>Ntethelelo Shabalala</span> </h1>
-      <p> <span>UKZN</span> Computer Science and IT graduate with a strong passion for software development</p>
+      <p> <span>UKZN</span> Computer Science and Information Technology graduate </p>
       <a href="#about"><button class="btn" >About me</button></a>
+      
   </section>
 
   <section class="about" id="about">
@@ -82,15 +83,14 @@
         </div>
         <div class="container">
           <div class="info">
-              <h4><span>Full Name </span>: Ntethelelo Wonder-boy Shabalala</h4>
+              <h4><span>First Name </span>: Ntethelelo Wonder-boy</h4>
+              <h4><span>Surname </span>: Shabalala</h4>
               <h4><span>Date of birth </span>: 27 March 1999 </h4>
               <h4><span>Qualification </span>: Bachelor of Science in Computer Science and IT</h4>
               <h4><span>Home Town </span>: Estcourt, KwaZulu-Natal</h4>
               <h4><span>Nationality </span>: South African</h4>
-              <h4><span>Hobbies </span>: Coding, Chess, Video games, Sports, Music</h4>
               <h4><span>Languages </span>: IsiZulu<span>(Native)</span>, English<span>(Professional)</span></h4>
-              <h4><span>Current Town </span>: Durban, KwaZulu-Natal</h4>
-              <a download ="Ntethelelo_Shabalala_Resume"href="./Ntethelelo Shabalala Resume.pdf"><button class="btn" >Get Resume</button></a>
+              <a download ="Ntethelelo_Shabalala_Resume" href="./img/Ntethelelo Shabalala Resume.pdf"><button class="btn" >Get Resume</button></a>
           </div>
 
           <div class="bio">
@@ -115,20 +115,29 @@
         </div>
 
         <div class="portfolio" >
+          <img src="./img/Projects/Maze.png">
+          <h5>Maze Application</h5>
+          <p> Java</p>
+          <a href="https://github.com/NtetheWonder" target="blank" ><button class="button">Github</button></a>
+          <a href="https://github.com/NtetheWonder/SearchCompareGui" target="blank"><button class="button">Preview</button></a>
+        </div>
+
+        <div class="portfolio" >
           <img src="./img/2022-02-14.png">
           <h5>Portfolio Website</h5>
           <p>HTML, CSS and JavaScript</p>
-          <a href="https://github.com/NtetheWonder" target="blank"><button class="button">Github</button></a>
+          <a href="https://github.com/NtetheWonder/NtetheProfile" target="blank"><button class="button">Github</button></a>
           <a href="https://ntethelelo.netlify.app" target="blank"><button class="button">Preview</button></a>
         </div>
 
         <div class="portfolio" >
           <img src="./img/Projects/E-comerce.jpg">
-          <h5>Valor Cafe Website</h5>
-          <p>E-comerce website in C# ASP.NET and MS SQL</p>
+          <h5>E-comerce Website</h5>
+          <p> Microsoft C# ASP.NET and MS SQL</p>
           <a href="https://github.com/NtetheWonder" target="blank"><button class="button">Github</button></a>
           <a href="#" ><button class="button">Read more</button></a>
         </div>
+
 
         <div class="portfolio" >
           <img src="./img/Projects/Memory.jpg">
@@ -138,21 +147,11 @@
         </div>
 
         <div class="portfolio" >
-          <img src="./img/Projects/Calculator.png">
-          <h5>Calculator</h5>
-          <p>JavaScript Web Calculator</p>
-          <a href="https://github.com/NtetheWonder" target="blank" ><button class="button">Github</button></a>
-          <a href="#" ><button class="button">Preview</button></a>
+          <img src="./img/Projects/2022-02-28 (4).png">
+          <h5>Interactive Learning</h5>
+          <p>Scratch</p>
+          <a href="https://scratch.mit.edu/projects/577804433" target="blank"><button class="button">Try it</button></a>
         </div>
-        
-        <div class="portfolio" >
-          <img src="./img/1__DoQYUR5MBoIOJpWGgYWfA.jpeg">
-          <h5>Blurring on load</h5>
-          <p> HTML, CSS and JavaScript</p>
-          <a href="https://github.com/NtetheWonder" target="blank" ><button class="button">Github</button></a>
-          <a href="#"><button class="button">Preview</button></a>
-        </div>
-        
         
       </div>
 </section>
@@ -180,6 +179,26 @@
           <h4></h4>
           <p><span>Subjects </span>: Mathematics, English(FAL), IsiZulu, Physical Sciences, Life Sciences, Geography and Life Orientation</p>
       </div>
+
+      <div class="high">
+        <i class="fas fa-graduation-cap"></i>
+        2022
+        <h3>FreeCodeCamp</h3>
+        <h4>Responsive Web design</h4>
+        <p>Basic HTML and HTML 5, Basic CSS, Applied Visual Design, Responsive Web Design Principles, 
+          Applied Accessibility, CSS Flexbox and CSS Grid
+        </p>
+    </div>
+
+    <div class="high">
+      <i class="fas fa-graduation-cap"></i>
+      2022
+      <h3>FreeCodeCamp</h3>
+      <h4>JavaScript Algorithms and Data Structures</h4>
+      <p>Basic JavaScript, ES6, Regular Expressions, Debugging, Basic Data Structures, Object-Oriented programming
+      </p>
+  </div>
+  
       
       
   </div>
@@ -263,7 +282,7 @@
         </div>
 
         <div class="contact-form">
-        <form  action="https://formsubmit.co/ntethewonder@gmail.com" method="POST">
+        <form  onsubmit="sendEmail(); reset(); return false">
           <h3>Send me <span>a message</span></h3>
             <input class="items" type="text" name="name" placeholder="Name"/>
             <input class="items" type="email" name="email" placeholder="Email"/>
@@ -294,7 +313,7 @@
       </a>
     </div>
   </footer> 
-  
+  <script src="https://smtpjs.com/v3/smtp.js" ></script>
   <script src="./app.js"></script>
 </body>
 </html>

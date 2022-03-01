@@ -1,3 +1,12 @@
+
+var typed = new Typed(".auto-input",{
+    strings: ["Hi there!","Welcome!"],
+    typeSpeed: 150,
+    backSpeed: 100,
+    loop: true
+
+});
+
 $(document).ready(function(){
 
     $('#menu').click(function(){

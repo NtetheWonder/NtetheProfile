@@ -86,10 +86,11 @@
       background: var(--primary-color);
       color: #e4e9f7;
   }
+  
   .search-box input{
      
-      width: 70%;
-      background: var(--primary-color-light);
+      width: 65%;
+      background: var(--body-color);
       outline: none;
       border: none;
       border-radius: .25rem;

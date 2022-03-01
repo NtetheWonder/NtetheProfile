@@ -205,6 +205,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     gap:1rem;
+    padding-bottom: 1rem;
     
 }
 .about .info{
@@ -222,6 +223,30 @@ section{
     height: 300px;
     border-radius: 50%;
     box-shadow: .5rem .2rem  .1rem yellowgreen;
+}
+.about h1{
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+.about h1 span{
+    color: rgb(17, 170, 221);
+}
+
+.my-skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.my-skills .skill{
+    flex: auto;
+    background: yellow;
+    
+    text-align: center;
+    box-shadow: .1rem .1rem 1rem .1rem var(--primary-color);
+}
+.my-skills .skill i{
+    background:rgb(17, 170, 221) ;
+    width: 100%;
 }
 /*=================End of about page======================*/
 /*=================Contact page======================*/

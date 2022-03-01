@@ -28,6 +28,7 @@
   header .image-text .header-text{
       display: flex;
       flex-direction: column;
+      padding-bottom: 1.5rem;
   }
   header .header-text .name{
       font-size: 1.5rem;

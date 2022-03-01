@@ -22,13 +22,13 @@ $(document).ready(function(){
 
 
 function sendEmail(){
-    Email.send({
+    email.send({
        SecureToken : "e18dd471-c4b9-486d-8631-bc8f8ae03dd8",
         To : "ntethewonder@gmail.com",
-        From : "",
-        Subject : "New Sumit from you website",
+        From : document.getElementById("email").value,
+        Subject : "New Submit from you website",
         Body : "And this is the body"
     }).then(
-      message => alert(message)
+      message => alert("Message sent successfully")
     );
 }

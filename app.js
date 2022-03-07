@@ -66,30 +66,16 @@ const cards = document.querySelectorAll('.card');
 				<div class="card-content">
 					<h2>${title}</h2>
 					<img src="./img/${type}.png" alt="${title}">
+					<h4>
+					Hi, Thank you for visiting my site.	
+                    </h4>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro
-						reprehenderit? Animi corporis deleniti dolore laborum, nemo pariatur temporibus voluptatem.
+						I'm currently working on this site so all the functionality and the details will be available in no time
 					</p>
+					
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis
-						cupiditate dicta eius exercitationem explicabo fugit, impedit iure libero nam nihil nisi perferendis
-						provident quaerat repellendus vitae voluptate? Aliquid amet architecto asperiores aut consequuntur
-						corporis debitis ea eveniet in maiores, nam placeat quae, ratione rerum ullam?
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro
-						reprehenderit? Animi corporis deleniti dolore laborum, nemo pariatur temporibus voluptatem.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eum ipsa molestiae nesciunt nostrum porro
-						reprehenderit? Animi corporis deleniti dolore laborum, nemo pariatur temporibus voluptatem.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eligendi fuga ullam? Aperiam blanditiis
-						cupiditate dicta eius exercitationem explicabo fugit, impedit iure libero nam nihil nisi perferendis
-						provident quaerat repellendus vitae voluptate? Aliquid amet architecto asperiores aut consequuntur
-						corporis debitis ea eveniet in maiores, nam placeat quae, ratione rerum ullam?
-					</p>
+					I'm really for the convinience, 	
+                    </p>
 				</div>
 			`;
 		}

@@ -145,7 +145,6 @@ section{
     font-size: 1.05rem;
     text-transform: uppercase;
     font-weight: 400;
-    
     cursor: pointer;
   }
   .btn:hover{
@@ -159,8 +158,6 @@ section{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    
-
 }
 
 .hobbies .box-container .box{
@@ -430,7 +427,7 @@ footer {
     flex: 1 1 15rem;
     width: calc(50% - 13px);
     height: 160px;
-    background: url("./img/Projects/E-comerce.jpg");
+    background: url("./img/E-comerce.jpg");
     color: #dc7b7b;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -451,6 +448,7 @@ footer {
 
 .card-content {
     padding: 100px 25px 25px;
+    background: var(--toggle-color);
     overflow: auto;
     height: 100%;
     color: #fff;
@@ -461,21 +459,27 @@ footer {
 }
 .card-content a{
     display: flex;
+   
 }
 .card-content h2 {
     font-size: 32px;
     margin-bottom: 35px !important;
     animation: slideDown 0.5s ease-out forwards;
 }
+.card-content h4 {
+    font-size: 25px;
+    color: var(--primary-color-light);
+    margin-bottom: 30px !important;
+    animation: slideDown 0.5s ease-out forwards;
+}
 .card-content img {
-    width:50%;
-    height: 50%;
-    background-color: #fff;
+    width:70%;
+   
     margin-bottom: 10px;
     animation: slideDown 0.5s ease-out 0.2s forwards;
 }
 .card-content p {
-    color: #999;
+    color: var(--text-color);
     animation: slideDown 0.5s ease-out 0.4s forwards;
 }
 /*=================End Certificates======================*/

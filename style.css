@@ -49,7 +49,7 @@
       left: 0;
       z-index: 1000;
       height: 100%;
-      width: 250px;
+      width: 15.625rem;
       background: var(--sidebar-color);
       display: flex;
       align-items: center;
@@ -88,16 +88,7 @@
       color: #e4e9f7;
   }
   
-  .search-box input{
-     
-      width: 65%;
-      background: var(--body-color);
-      outline: none;
-      border: none;
-      border-radius: .25rem;
-     
 
-  }
   header .social-media a{
       color: blue;
       font-size: 1.2rem;
@@ -112,7 +103,8 @@
   /*=================End of sidebar(Header)======================*/
 
   /*=================Menu content======================*/
-#menu{
+  
+  #menu{
     position: fixed;
     top: 1rem; right: 1rem;
     z-index: 1000;
@@ -127,7 +119,7 @@
 
 
 section{
-    background:#e4e9f7;
+    background:var(--body-color);
     min-height: 100vh; 
     align-items: center;
     justify-content: center;
@@ -374,6 +366,16 @@ footer {
     padding: 0.7rem 1.8rem;
     font-size: 1rem;
   }
+  .portfolio i{
+    color: white;
+    background: rgb(17, 17, 16);
+     
+      font-size: 1.5rem;
+      border-radius: 50%;
+  }
+  .portfolio i:hover{
+    color: yellow;
+  }
 /*=================End of projects ======================*/
 
 /*=================Education ======================*/
@@ -390,107 +392,92 @@ footer {
     box-shadow: 0.1rem 0.2rem rgb(8, 5, 168);
 }
 .education .schools span{
-    color: var(--span-color);
-    font-style: italic;
+    color: black;
+    
 }
 .education .schools h4{
     color: rgb(62, 62, 165);
+}
+
+.education .schools a{
+    color: black;
+    text-decoration: none;
 }
 .education .schools p{
     color: var(--text-color);
 }
 
 /*=================End education======================*/
+
+
 /*=================Certificates======================*/
 
-.certificates{
-    padding:1rem 7rem;
-    align-items: center;
-}
-.section-header{
-    align-items: center;
-    text-align: center;
-    color: yellow;
-    background: var(--primary-color);
-}
-.section-header a{
-    color: #d00;
+@keyframes slideDown {
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 .cards {
-  
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-    
-    
-  }
-  
-  .card-wrap {
-    position: relative;
-    margin: 1.7rem 0.8rem;
-  }
-  
-  .card {
-    position: relative;
-    width: 100%;
-    max-width: 300px;
-    min-height: 220px;
-    background-color: var(--sidebar-color);
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 1rem 1rem;
-    overflow: hidden;
-    transition: 0.3s;
-  }
-  
-  .card:before {
-    content: attr(data-card);
-    position: absolute;
-    top: -15px;
-    right: -15px;
-    font-size: 3rem;
-    font-weight: 600;
-    line-height: 1;
-    color: var(--main-color);
-    opacity: 0.025;
-  }
-  
-  .card:after {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    overflow: auto;
+}
 
-    position: absolute;
-    width: 100%;
-    height: 0px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--primary-color);
-    transition: 0.3s;
-  }
-  
-  .card-wrap:hover .card {
-    transform: translateY(-15px);
-  }
-  
-  .card-wrap:hover .card:after {
-    height: 8px;
-  }
-  
-  .icon {
-    width: 100%;
-    margin-bottom: .5rem;
-  }
-  
-  .card .title-sm {
-    line-height: 0.8;
-  }
-  
-  .card .text {
-    font-size: 1.15rem;
-    margin: 1.8rem 0;
-  }
+.cards .card {
+    flex: 1 1 15rem;
+    width: calc(50% - 13px);
+    height: 160px;
+    background: url("./img/Projects/E-comerce.jpg");
+    color: #dc7b7b;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    border: 3px solid yellowgreen;
+    box-shadow: 0 0 9px #4c0505;
+}
+.cards .card a{
+    display: none;
+}
+.cards  .card h2 {
+    margin: 0;
+}
+
+.card-content {
+    padding: 100px 25px 25px;
+    overflow: auto;
+    height: 100%;
+    color: #fff;
+}
+.card-content > * {
+    transform: translateY(-35px);
+    opacity: 0;
+}
+.card-content a{
+    display: flex;
+}
+.card-content h2 {
+    font-size: 32px;
+    margin-bottom: 35px !important;
+    animation: slideDown 0.5s ease-out forwards;
+}
+.card-content img {
+    width:50%;
+    height: 50%;
+    background-color: #fff;
+    margin-bottom: 10px;
+    animation: slideDown 0.5s ease-out 0.2s forwards;
+}
+.card-content p {
+    color: #999;
+    animation: slideDown 0.5s ease-out 0.4s forwards;
+}
 /*=================End Certificates======================*/
 /*=================Hobbies======================*/
 

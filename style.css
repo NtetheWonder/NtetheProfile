@@ -106,7 +106,7 @@
   
   #menu{
     position: fixed;
-    top: 1rem; right: 1rem;
+    top: 1rem; left: 1rem;
     z-index: 1000;
     color: black;
     border-radius: .5rem;
@@ -451,6 +451,7 @@ footer {
     background: var(--toggle-color);
     overflow: auto;
     height: 100%;
+    margin-left: 250px;
     color: #fff;
 }
 .card-content > * {
@@ -492,6 +493,14 @@ footer {
     header{
         left: -120%;
     }
+    .card-content {
+        padding: 100px 25px 25px;
+        background: var(--toggle-color);
+        overflow: auto;
+        height: 100%;
+        margin-left: 0px;
+        color: #fff;
+    }
     #menu{
         display: initial;
     }
@@ -514,6 +523,7 @@ footer {
     .heading{
         font-size: 2rem;
     }
+    
     .btn,.button{
         font-size: .85rem;
         padding: .65rem 1.5rem;

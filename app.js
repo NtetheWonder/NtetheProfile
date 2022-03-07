@@ -132,7 +132,7 @@ const cards = document.querySelectorAll('.card');
 					[...cardClone.children].forEach(child => child.style.display = 'none');
 				});
 			// expand the clone card
-			await toggleExpansion(cardClone, {top: 0, left: '250px', width: '100vw', height: '100vh'});
+			await toggleExpansion(cardClone, {top: 0, left: 0, width: '100vw', height: '100vh'});
 			const content = getCardContent(card.textContent, card.dataset.type)
 			// set the display block so the content will follow the normal flow in case the original card is not display block
 			cardClone.style.display = 'block';

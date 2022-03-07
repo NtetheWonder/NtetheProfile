@@ -501,6 +501,9 @@ footer {
         margin-left: 0px;
         color: #fff;
     }
+    .card-content img {
+        width:100%;
+    }
     #menu{
         display: initial;
     }

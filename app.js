@@ -61,23 +61,188 @@ const cards = document.querySelectorAll('.card');
 			})
 		}
 
+		var myArray =[{'title':'Maze','p':'','tools':''},
+		{'title':'quiz','p':'This is Quiz application which you can use to test your knowledge about healthy living lifestyle','tools':'C++'},
+		{'title':'Maze','p':'','tools':''}
+	]
+		
 		const getCardContent = (title, type) => {
-			return `
-				<div class="card-content">
-					<h2>${title}</h2>
-					<img src="./img/${type}.png" alt="${title}">
-					<h4>
-					Hi, Thank you for visiting my site.	
-                    </h4>
-					<p>
-						I'm currently working on this site so all the functionality and the details will be available in no time
-					</p>
-					
-					<p>
-					I'm really for the convinience, 	
-                    </p>
-				</div>
-			`;
+
+			if(type === "maze"){
+				return `
+					<div class="card-content">
+						<h2>${title}</h2>
+						<p>This is Maze application which is used to compare different search methods</p>
+						<img src="./img/${type}.png" alt="${title}">
+						<h4>
+						Hi, Thank you for visiting .	
+						</h4>
+						<h5> Tools used : <span> Java & inteliJ</span> </h5>
+						<p></p>
+						<p>
+						Maze Runner game is a game that requires pathfinding algorithm to get 
+						to the destination with the shortest path. This algorithm is used in an NPC that
+						will move from start node to destination node. However, the use of incorrect algorithms 
+						can affect the length of the computing process to find the shortest path. The longer the 
+						computing process, the longer the players have to wait. This study compared pathfinding 
+						algorithms A *, Dijkstra, and Breadth First Search (BFS) in the Maze Runner game. Comparison 
+						process of these algorithms was conducted by replacing the algorithm in the game by measuring
+						the process time, the length of the path, and the numbers of block played in the existing 
+						computing process. The results of this study recommend
+						which algorithm is suitable to be applied in Maze Runner Game 
+						</p>
+						
+					</div>
+				`;
+			}
+			else if(type === "quiz"){
+				return `
+					<div class="card-content">
+						<h2>${title}</h2>
+						<p>This is a quiz about healthly living lifestyle</p>
+						<img src="./img/${type}.png" alt="${title}">
+						<h4>
+						Hi, Thank you for visiting .	
+						</h4>
+						<h5> Tools used : <span> C++ & CLion</span> </h5>
+						<p></p>
+						<p>
+						Anyone looking to improve their knowledge can use this
+						</p>
+						
+					</div>
+				`;
+			}
+			else if(type === "website"){
+				return `
+					<div class="card-content">
+						<h2>${title}</h2>
+						
+						<img src="./img/${type}.png" alt="${title}">
+						<h4>
+						Hi, Thank you for visiting .	
+						</h4>
+						<h5> Tools used : <span> Html, Cascading Style Sheet (CSS) & JavaScript</span> </h5>
+						<p>This is a personal portfolio website of myself (Ntethelelo), made using Html, CSS & JavaScript.</p>
+						
+					</div>
+				`;
+			}
+			else if(type === "scratch"){
+				return `
+					<div class="card-content">
+						<h2>${title}</h2>
+						<p>Fun and interactive way of learning</p>
+						<img src="./img/${type}.png" alt="${title}">
+						<h4>
+						Hi, Thank you for visiting .	
+						</h4>
+						<h5> Tools used : <span> Scratch.com</span> </h5>
+						<p></p>
+						<p>
+						This is a project which uses scratch to create an interactive and a fun way of learning
+						, which keeps you engaged and enjoying the learning process. In this project we learn more 
+						about the Database Life Cycle, you learn more about the stages and processes involved and you also get 
+						to take a quiz about what you have learned.
+						</p>
+						
+					</div>
+				`;
+			}
+			else if(type === "Memory"){
+				return `
+					<div class="card-content">
+						<h2>${title}</h2>
+						<img src="./img/${type}.png" alt="${title}">
+						<h4>
+							Card pairing game.	
+						</h4>
+						<h5> Tools used : <span>Java & Intellij</span> </h5>
+						
+				
+					</div>
+				`;
+			}
+			else if(type === "E-comerce"){
+				return `
+					<div class="card-content">
+						<h2>${title}</h2>
+						<img src="./img/${type}.png" alt="${title}">
+						<h4>
+						Final year Major Project.	
+						</h4>
+						<h5> Tools used : <span> Microsoft C# ASP.Net, MySQL</span> </h5>
+						<p>
+						</p>
+						
+						
+					</div>
+				`;
+			}
+			else if(type === "puzzle"){
+				return `
+					<div class="card-content">
+						<h2>${title}</h2>
+						<img src="./img/${type}.png" alt="${title}">
+						<h4>
+						Puzzle Slider game	
+						</h4>
+						<h5> Tools used : <span> Java & Eclipse</span> </h5>
+						
+						
+					</div>
+				`;
+			}
+			else if(type === "react"){
+				return `
+					<div class="card-content">
+						<h2>${title}</h2>
+						<p>Portfolio website in Reactjs</p>
+						<img src="./img/${type}.png" alt="${title}">
+						<h4>
+						Hi, Thank you for visiting .	
+						</h4>
+						<h5> Tools used : <span> Reactjs</span> </h5>
+						<p></p>
+						<p>
+						</p>
+						
+					</div>
+				`;
+			}
+			else if(type === "Calculator"){
+				return `
+					<div class="card-content">
+						<h2>${title}</h2>
+						<p>Basic calculator implemented using javaScript</p>
+						<img src="./img/${type}.png" alt="${title}">
+						<h4>
+						Hi, Thank you for visiting .	
+						</h4>
+						<h5> Tools used : <span>Html, CSS & JavaScript</span> </h5>
+						<p>
+						Anyone looking to improve their knowledge can use this
+						</p>
+						
+					</div>
+				`;
+			}
+			else if(type === "blur"){
+				return `
+					<div class="card-content">
+						<h2>${title}</h2>
+						<img src="./img/${type}.png" alt="${title}">
+						<h4>
+						Hi, Thank you for visiting .	
+						</h4>
+						<h5> Tools used : <span>Html, CSS & JavaScript</span> </h5>
+						<p>
+						As the browser loads 
+						</p>
+						
+					</div>
+				`;
+			}
 		}
 
 		const onCardClick = async (e) => {
@@ -126,6 +291,9 @@ const cards = document.querySelectorAll('.card');
 				// remove the clone card
 				cardClone.remove();
 			});
+
+			//create github button
+
 			// fade the content away
 			fadeContent(cardClone, '0')
 				.then(() => {

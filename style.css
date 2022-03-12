@@ -388,6 +388,76 @@ footer {
     border: 3px solid yellowgreen;
     box-shadow: 0 0 9px #4c0505;
 }
+.cards #maze:hover{
+    background: url("./img/Maze.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .5s ease-in-out;
+    color: blue;
+}
+.cards #quiz:hover{
+    background: url("./img/quiz.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .5s ease-in-out;
+    color: blue;
+}
+.cards #website:hover{
+    background: url("./img/website.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .5s ease-in-out;
+    color: blue;
+}
+.cards #scratch:hover{
+    background: url("./img/scratch.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .5s ease-in-out;
+    color: blue;
+}
+.cards #react:hover{
+    background: url("./img/website.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .5s ease-in-out;
+    color: blue;
+}
+.cards #memory:hover{
+    background: url("./img/Memory.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .5s ease-in-out;
+    color: blue;
+}
+.cards #puzzle:hover{
+    background: url("./img/puzzle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .5s ease-in-out;
+    color: blue;
+}
+.cards #blur:hover{
+    background: url("./img/blur.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .5s ease-in-out;
+    color: blue;
+}
+.cards #E-comerce:hover{
+    background: url("./img/E-comerce.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .5s ease-in-out;
+    color: blue;
+}
+.cards #calculator:hover{
+    background: url("./img/Calculator.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .5s ease-in-out;
+    color: blue;
+}
 .cards .card .socialPreview{
     position: absolute;
     top: 0%;

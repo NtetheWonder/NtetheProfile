@@ -319,60 +319,7 @@ footer {
 
 
 
-.projects .project-group{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-     
-}
-.projects .project-group .portfolio{
-    
-    flex: 1 1 20rem;
-    text-align: center;
-    padding: .5rem;
-    background:var(--primary-color);
-    border-radius: .5rem;
-    box-shadow: 0.2rem .2rem .1rem var(--text-color);
-}
 
-.project-group img{
-    width: 100%;
-    height: 14rem;
-    
-    border-radius: 1rem;
-}
-.button {
-    display: inline-block;
-    padding: 0.25rem .5rem;
-    background-color: var(--span-color);
-    color: var(--toggle-color);
-    border-radius: .5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: 500;
-    transition: 0.3s;
-  }
-  
-  .button:hover {
-    background-color: #6b44e0;
-    color: white;
-    transition: 0.5s ease-in-out;
-  }
-  
-  .button.small {
-    padding: 0.7rem 1.8rem;
-    font-size: 1rem;
-  }
-  .portfolio i{
-    color: white;
-    background: rgb(17, 17, 16);
-    font-size: 1.5rem;
-    border-radius: 50%;
-  }
-  .portfolio i:hover{
-    color: yellow;
-  }
 /*=================End of projects ======================*/
 
 /*=================Education ======================*/
@@ -421,6 +368,7 @@ footer {
     gap: 1rem;
     justify-content: space-between;
     overflow: auto;
+    position: relative;
 }
 
 .cards .card {
@@ -431,16 +379,28 @@ footer {
     color: #dc7b7b;
     margin-bottom: 20px;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: default;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 10px;
+    position: relative;
     border: 3px solid yellowgreen;
     box-shadow: 0 0 9px #4c0505;
 }
-.cards .card a{
-    display: none;
+.cards .card .socialPreview{
+    position: absolute;
+    top: 0%;
+    transform: translate(-50%);
+    right: 0%;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    background: yellowgreen;
+}
+.cards .card .socialPreview a{
+    padding: .3rem;
+    color: blue;
 }
 .cards  .card h2 {
     margin: 0;

@@ -61,21 +61,17 @@ const cards = document.querySelectorAll('.card');
 			})
 		}
 
-		var myArray =[{'title':'Maze','p':'','tools':''},
-		{'title':'quiz','p':'This is Quiz application which you can use to test your knowledge about healthy living lifestyle','tools':'C++'},
-		{'title':'Maze','p':'','tools':''}
-	]
-		
+			
 		const getCardContent = (title, type) => {
 
 			if(type === "maze"){
 				return `
 					<div class="card-content">
 						<h2>${title}</h2>
-						<p>This is Maze application which is used to compare different search methods</p>
+						<p>This is Maze application which is used to compare different search algorithms</p>
 						<img src="./img/${type}.png" alt="${title}">
 						<h4>
-						Hi, Thank you for visiting .	
+						Maze runner app .	
 						</h4>
 						<h5> Tools used : <span> Java & inteliJ</span> </h5>
 						<p></p>
@@ -84,13 +80,14 @@ const cards = document.querySelectorAll('.card');
 						to the destination with the shortest path. This algorithm is used in an NPC that
 						will move from start node to destination node. However, the use of incorrect algorithms 
 						can affect the length of the computing process to find the shortest path. The longer the 
-						computing process, the longer the players have to wait. This study compared pathfinding 
+						computing process, the longer the players have to wait. 
+						</p>
+						<p>This study compared pathfinding 
 						algorithms A *, Dijkstra, and Breadth First Search (BFS) in the Maze Runner game. Comparison 
 						process of these algorithms was conducted by replacing the algorithm in the game by measuring
 						the process time, the length of the path, and the numbers of block played in the existing 
 						computing process. The results of this study recommend
-						which algorithm is suitable to be applied in Maze Runner Game 
-						</p>
+						which algorithm is suitable to be applied in Maze Runner Game </p>
 						
 					</div>
 				`;
@@ -140,7 +137,7 @@ const cards = document.querySelectorAll('.card');
 						<h5> Tools used : <span> Scratch.com</span> </h5>
 						<p></p>
 						<p>
-						This is a project which uses scratch to create an interactive and a fun way of learning
+						This is a project that uses scratch to create an interactive and a fun way of learning
 						, which keeps you engaged and enjoying the learning process. In this project we learn more 
 						about the Database Life Cycle, you learn more about the stages and processes involved and you also get 
 						to take a quiz about what you have learned.
@@ -273,6 +270,7 @@ const cards = document.querySelectorAll('.card');
 				height: 35px;
 				border-radius: 50%;
 				background-color: #e25656;
+				cursor: pointer;
 			`;
 			// attach click event to the close button
 			closeButton.addEventListener('click', async () => {

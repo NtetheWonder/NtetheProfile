@@ -90,17 +90,49 @@
 
   header .social-media a{
       color: blue;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       margin: 0.2rem;
   }
   header .social-media a:hover{
-      background: var(--primary-color);
-      color: var(--primary-color-light);
+      
+      color: white;
       transition: .5s ease-in-out;
       text-decoration: none;
   }
 
   /*=================End of sidebar(Header)======================*/
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    position: relative;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
   /*=================Menu content======================*/
   
@@ -239,6 +271,9 @@ section{
     width: 100%;
 }
 /*=================End of about page======================*/
+
+
+  
 /*=================Contact page======================*/
 .contacts .contact-details{
     display: flex;
@@ -316,45 +351,6 @@ footer {
       transition: .2s ease-in-out;
   }
 /*=================Projects page======================*/
-
-
-
-
-/*=================End of projects ======================*/
-
-/*=================Education ======================*/
-.education .schools{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    
-}
-.education .schools .high{
-    flex: 1 1 25rem;
-    margin-bottom: 1.5rem;
-    border-radius: .5rem;
-    box-shadow: 0.1rem 0.2rem rgb(8, 5, 168);
-}
-.education .schools span{
-    color: black;
-    
-}
-.education .schools h4{
-    color: rgb(62, 62, 165);
-}
-
-.education .schools a{
-    color: black;
-    text-decoration: none;
-}
-.education .schools p{
-    color: var(--text-color);
-}
-
-/*=================End education======================*/
-
-
-/*=================Certificates======================*/
 
 @keyframes slideDown {
     100%{
@@ -530,6 +526,45 @@ footer {
     animation: slideDown 0.5s ease-out forwards;
     cursor: pointer;
 }
+
+
+/*=================End of projects ======================*/
+
+/*=================Education ======================*/
+.education .schools{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+.education .schools .high{
+    flex: 1 1 25rem;
+    margin-bottom: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 0.1rem 0.2rem rgb(8, 5, 168);
+}
+.education .schools span{
+    color: black;
+    
+}
+.education .schools h4{
+    color: rgb(62, 62, 165);
+}
+
+.education .schools a{
+    color: black;
+    text-decoration: none;
+}
+.education .schools p{
+    color: var(--text-color);
+}
+
+/*=================End education======================*/
+
+
+/*=================Certificates======================*/
+/* Style the tab */
+
 /*=================End Certificates======================*/
 #myBtn {
     display: none; /* Hidden by default */
@@ -539,16 +574,18 @@ footer {
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
-    color: white; /* Text color */
+    background-color: yellowgreen; /* Set a background color */
+    color: blue; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 12px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+    padding: 10px; /* Some padding */
+    border-radius: 30px; /* Rounded corners */
+    font-size: 25px; /* Increase font size */
+    
   }
   
   #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
+    color: white;
   }
 /*=================Hobbies======================*/
 
@@ -606,11 +643,6 @@ footer {
         
     }
     
-    .certificates{
-        font-size: .85rem;
-        padding:.2rem 2rem;
-    
-    }
     .about .bio img{
         width: 100%;
         height: 100%;
@@ -625,13 +657,9 @@ footer {
         height: 100%;
     }
     
-   
-   
     .about .bio img{
         width: 100%;
-        height: 100%;
-       
-        
+        height: 100%;   
     }
     
 }

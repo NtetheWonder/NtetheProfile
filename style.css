@@ -35,7 +35,8 @@
   }
  
   body{
-     
+    background-image: url("./img/Projects/luke-stackpoole-ZRsJmpt9pNI-unsplash.jpg");
+    background-repeat: no-repeat;
     background-size: contain;
     background-color: var(--body-color);
     padding-left: 250px;
@@ -163,7 +164,7 @@ section{
     text-align: center;
     margin-bottom: 1.5rem;
     font-size: 3rem;
-    background: transparent;
+
 
   }
   .heading span{
@@ -186,13 +187,7 @@ section{
     transition: 0.5s ease-in-out;
   }
 /*=================end of menu======================*/
-.hobbies{
-    background-image: url("./img/Projects/A.jpg");
-    background-color: var(--body-color);
-    background-size: contain;
-    background-repeat: no-repeat;
 
-}
 .hobbies .box-container{
     display: flex;
     flex-wrap: wrap;
@@ -231,6 +226,11 @@ section{
 /*=================End of home page======================*/
 
 /*=================About page======================*/
+.hobbies{
+    background-image: url("./img/Projects/christopher-gower-m_HRfLhgABo-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .about .container{
     display: flex;
@@ -362,8 +362,8 @@ footer {
   }
 /*=================Projects page======================*/
 .wrapper{
-    background-image: url("./img/Projects/sabri-tuzcu-wunVFNvqhfE-unsplash.jpg");
-    background-size: contain;
+    background-image: url("./img/Projects/charles-adrien-fournier-g815W4LH4F8-unsplash\ \(1\).jpg");
+    
     background-repeat: no-repeat;
     background-color: var(--body-color);
 }
@@ -629,7 +629,11 @@ footer {
         margin-left: 0px;
         color: #fff;
     }
-    
+    .home{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
     #menu{
         display: initial;
     }
@@ -645,6 +649,10 @@ footer {
         font-size: 1rem; 
         
     }
+    .about .bio img{
+        border-radius: .5rem;
+    }
+    
 }
 
 @media (max-width:650px){
@@ -657,17 +665,20 @@ footer {
         font-size: .85rem;
         padding: .65rem 1.5rem;
     }
-    .home{
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
+   
     header .image-text img{
         width: 100;
         border-radius: 20%;
         
     }
-    
+    .body{
+        background:var(--body-color);
+    }
+    .about{
+        background-image: url("./img/Projects/luke-stackpoole-ZRsJmpt9pNI-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
     .about .bio img{
         width: 100%;
         height: 100%;

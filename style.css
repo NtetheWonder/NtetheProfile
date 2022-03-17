@@ -36,10 +36,11 @@
  
   body{
      
-    background: var(--body-color);
-      padding-left: 250px;
-      align-items: center;
-      justify-content: center;
+    background-size: contain;
+    background-color: var(--body-color);
+    padding-left: 250px;
+    align-items: center;
+    justify-content: center;
 
   }
   header{
@@ -155,14 +156,14 @@ section{
     min-height: 100vh; 
     align-items: center;
     justify-content: center;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    padding-bottom: 2rem;
+    
+    padding: 2rem;
 }
 .heading {
     text-align: center;
     margin-bottom: 1.5rem;
     font-size: 3rem;
+    background: transparent;
 
   }
   .heading span{
@@ -185,7 +186,13 @@ section{
     transition: 0.5s ease-in-out;
   }
 /*=================end of menu======================*/
+.hobbies{
+    background-image: url("./img/Projects/A.jpg");
+    background-color: var(--body-color);
+    background-size: contain;
+    background-repeat: no-repeat;
 
+}
 .hobbies .box-container{
     display: flex;
     flex-wrap: wrap;
@@ -207,8 +214,10 @@ section{
     align-items: center;
     justify-content: center;
     flex-flow: column;
-    padding: 0 15 rem; 
-    
+    padding: 0 15 rem;
+    background-image:url("./img/Projects/sabri-tuzcu-wunVFNvqhfE-unsplash.jpg") ; 
+    background-size: cover;
+    background-color: var(--body-color);
 }
 .home h3{
     font-size: 2rem;
@@ -228,6 +237,7 @@ section{
     flex-wrap: wrap;
     gap:1rem;
     padding-bottom: 1rem;
+    
     
 }
 .about .info{
@@ -351,7 +361,12 @@ footer {
       transition: .2s ease-in-out;
   }
 /*=================Projects page======================*/
-
+.wrapper{
+    background-image: url("./img/Projects/sabri-tuzcu-wunVFNvqhfE-unsplash.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--body-color);
+}
 @keyframes slideDown {
     100%{
         transform: translateY(0);
@@ -370,8 +385,11 @@ footer {
 .cards .card {
     flex: 1 1 15rem;
     width: calc(50% - 13px);
-    height: 160px;
-    background: url("./img/E-comerce.jpg");
+    height: 210px;
+    background-image: url("./img/Projects/Back.jpg");
+    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
     color: #dc7b7b;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -478,7 +496,7 @@ footer {
     cursor: default;
     overflow: auto;
     height: 100%;
-    margin-left: 250px;
+    margin-left: 240px;
     color: #fff;
 }
 .card-content > * {
@@ -531,6 +549,13 @@ footer {
 /*=================End of projects ======================*/
 
 /*=================Education ======================*/
+/* .education{
+    background: url("./img/Projects/luke-stackpoole-ZRsJmpt9pNI-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--body-color);
+} */
+
 .education .schools{
     display: flex;
     flex-wrap: wrap;

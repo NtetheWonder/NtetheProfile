@@ -125,6 +125,7 @@ const cards = document.querySelectorAll('.card');
 						will move from start node to destination node. However, the use of incorrect algorithms 
 						can affect the length of the computing process to find the shortest path. The longer the 
 						computing process, the longer the players have to wait. 
+						
 						</p>
 						<p>This study compared pathfinding 
 						algorithms A *, Dijkstra, and Breadth First Search (BFS) in the Maze Runner game. Comparison 

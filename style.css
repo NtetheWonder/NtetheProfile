@@ -104,38 +104,6 @@
   }
 
   /*=================End of sidebar(Header)======================*/
-  .swiper {
-    width: 100%;
-    height: 100%;
-  }
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    position: relative;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 
   /*=================Menu content======================*/
   
@@ -164,7 +132,6 @@ section{
     margin-bottom: 1.5rem;
     font-size: 3rem;
 
-
   }
   .heading span{
       color: yellowgreen;
@@ -185,6 +152,34 @@ section{
     color: black;
     transition: 0.5s ease-in-out;
   }
+
+/*=================Certificates page======================*/
+
+.certificate-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+   
+}
+.certificate-container .certificate{
+    
+    background-color: var(--body-color);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+   
+    position: relative;
+    border: 3px solid yellowgreen;
+    box-shadow: 0 0 9px #4c0505;
+}
+.certificate-container .certificate img{
+    width: 100%;
+    height:100%;
+}
+.tabcontent h3{
+    padding: .6rem;
+}
 /*=================end of menu======================*/
 .hobbies{
     background-image: url("./img/Projects/christopher-gower-m_HRfLhgABo-unsplash.jpg");
@@ -214,7 +209,7 @@ section{
     justify-content: center;
     flex-flow: column;
     padding: 0 15 rem;
-    background-image:url("./img/Projects/sabri-tuzcu-wunVFNvqhfE-unsplash.jpg") ; 
+
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--body-color);
@@ -245,9 +240,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     gap:1rem;
-    padding-bottom: 1rem;
-    
-    
+    padding-bottom: 1rem;  
 }
 .about .info{
     flex: 1 1 20rem;
@@ -662,7 +655,9 @@ footer {
     header.toggle{
         left: 0%;
     }
-
+    .certificate-container{
+     grid-template-columns: 1fr 1fr;   
+    }
 }
 
 @media (max-width:650px){
@@ -675,11 +670,13 @@ footer {
         font-size: .85rem;
         padding: .65rem 1.5rem;
     }
+    .certificate-container{
+        grid-template-columns: 1fr ;   
+       }
    
     header .image-text img{
         width: 100;
-        border-radius: 20%;
-        
+        border-radius: 20%;    
     }
     .body{
         background:var(--body-color);

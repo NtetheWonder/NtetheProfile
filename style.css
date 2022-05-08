@@ -683,7 +683,7 @@ footer {
     .about{
         background-image: url("./img/Projects/luke-stackpoole-ZRsJmpt9pNI-unsplash.jpg");
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
     }
     .about .bio img{
         width: 100%;

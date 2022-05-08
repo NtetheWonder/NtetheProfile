@@ -120,8 +120,7 @@
 }
 
 
-section{
-    
+section{ 
     min-height: 100vh; 
     align-items: center;
     justify-content: center;
@@ -190,6 +189,8 @@ section{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
+    background:rgb(162, 182, 209,0.8);
+    
     
 }
 
@@ -305,9 +306,7 @@ section{
 .contacts .contact-form{
     display: flex;
     gap: 1.5rem;
-    flex-wrap: wrap;
-   
-    
+    flex-wrap: wrap; 
 }
 .contacts .contact-form form{
     flex: 1 1 40rem;

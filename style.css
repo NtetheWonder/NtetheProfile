@@ -256,7 +256,7 @@ section{
 .about .bio img{
     width: 300px;
     height: 300px;
-    border-radius: 50%;
+    border-radius: 10%;
     box-shadow: .5rem .2rem  .1rem yellowgreen;
 }
 .about h1{
@@ -265,6 +265,11 @@ section{
 }
 .about h1 span{
     color: rgb(17, 170, 221);
+}
+.about #Summary{
+    
+    color: #fff;
+    
 }
 
 .my-skills{
